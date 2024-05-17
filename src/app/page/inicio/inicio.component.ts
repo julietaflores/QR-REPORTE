@@ -210,12 +210,8 @@ export class InicioComponent  {
       }
    
     });
-   
-
 
   }
-
-
 
 }
 
