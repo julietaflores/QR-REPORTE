@@ -37,7 +37,6 @@ export class ApiserService {
       return new Promise<any>((resolve, reject) => {
         console.log(' campo 1 '+this.baseURL+nombre);
         this.http.get(this.baseURL+nombre).subscribe((data) => {
-        //  console.log(' campo 2 '+JSON.stringify(data));
           resolve(data);
         }, error => {
           reject(error);
