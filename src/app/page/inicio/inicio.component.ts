@@ -131,7 +131,6 @@ export class InicioComponent  {
     this.startTime_aux= this.startTime+'%2000:00:00';
     this.endTime_aux= this.endTime+'%2023:59:59';
     
-
     this.nom_servicio= 'lista_QR_generado_info&usuario='+this.Usuario+'&fecha_inicio='+this.startTime_aux+'&fecha_fin='+this.endTime_aux;
     this.api.getDataParament(this.nom_servicio).then((data: any) => {
       this.list= (data);
