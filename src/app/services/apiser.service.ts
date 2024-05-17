@@ -11,10 +11,7 @@ export class ApiserService {
   repos:any[] = [];
 
   baseURL: string = "http://sap.monterrey.com.bo:56479/web_service_qr/servicio.php?nombre=";
-
-
   constructor(private http: HttpClient ) { 
-    
   }
 
   getData(): Promise<any> {
