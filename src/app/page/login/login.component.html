@@ -1,0 +1,42 @@
+
+<div class="parent"> 
+
+    <div class="container" [ngClass]="isSignDivVisiable ? 'active' :'' " id="container">
+
+        <div class="form-container sign-in" >
+            <form>
+                <h1>Iniciar sesión</h1>
+            
+                        <!-- <button mat-raised-button color="primary" (click)="showsuccess()">Success</button>
+                        <br>
+                        <button mat-raised-button color="accent" (click)="showerror()">Error</button>
+                        <br>
+                        <button mat-raised-button color="warn" (click)="showwarning()">Warning</button>
+                        <br>
+                        <button mat-raised-button color="primary" (click)="showinfo()">Info</button>
+               -->
+
+                <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Usuario">
+                <input type="password" name="password"   [(ngModel)]="loginObj.password" placeholder="Contraseña">
+                <button (click)="onLogin()">Iniciar Sessión</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1 style="color: white;">¡Hola, Colega!</h1>
+                </div>
+
+            </div>
+        </div>
+
+       <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "large" color = "#ffff" type = "ball-8bits" [fullScreen] = "false"><p style="color: white" > Cargando... </p></ngx-spinner>
+
+
+    </div>
+
+
+
+</div>
+
